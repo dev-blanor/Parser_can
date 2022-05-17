@@ -1,0 +1,2175 @@
+MARKUP_VERSION(1.0)
+
+Window
+    .Set(width, 1920)
+    .Set(height, 720)
+    .Children(
+        Image
+            .Set(objectName, "MainScreenStatic.png")
+            .Set(isStatic, 1)
+            .Set(width, 1920)
+            .Set(height, 720)
+            .Set(source, "c795b99e-733b-4937-9c09-bc7456d38a6b#MainScreenStatic.png"_uuid),
+
+        CopyFrom(Window, "b55a0747-90ee-43d3-9133-3fc1ebdca234"_uuid)
+            .Set(width, 1920)
+            .Set(height, 720)
+            .Children(
+                Image
+                    .Set(objectName, "AirFilterClogged.png")
+                    .Set(x, 1467)
+                    .Set(y, 500)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "1a3a5eef-6c3a-4cb1-8a0e-fd24c536aa73#AirFilterClogged_AlphaPict_GUI"_uuid)
+                    .Set(color, "18e73771-3417-4941-bf4b-2aeea4d9af56#AirFilterClogged_Color_GUI"_uuid)
+                    .Set(source, "281b7a2a-8fb8-4c95-ae71-0c67b6fd7e17#AirFilterClogged.png"_uuid),
+
+                Image
+                    .Set(objectName, "BatteryHVConverterOff.png")
+                    .Set(x, 1392)
+                    .Set(y, 187)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "d9dd0649-6779-40d1-9db6-61eee00a8471#BatteryHVConverterOff.png"_uuid),
+
+                Image
+                    .Set(objectName, "BatteryHVConverterOutCurrentHigh.png")
+                    .Set(x, 1467)
+                    .Set(y, 157)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "2f395107-418e-4e66-bdf5-4669009f3f51#BatteryHVConverterOutCurrentHigh.png"_uuid),
+
+                Image
+                    .Set(objectName, "BatteryHVConverterOutVoltageHigh.png")
+                    .Set(x, 1542)
+                    .Set(y, 157)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "02c62bd8-1af7-4365-92a5-1e7c18aeef08#BatteryHVConverterOutVoltageHigh.png"_uuid),
+
+                Image
+                    .Set(objectName, "BatteryHVConverterOverheating.png")
+                    .Set(x, 1617)
+                    .Set(y, 187)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "95909296-0184-4a00-8e66-ed0047159d29#BatteryHVConverterOverheating.png"_uuid),
+
+                Image
+                    .Set(objectName, "BatteryHVCoolantFluid.png")
+                    .Set(x, 1333)
+                    .Set(y, 327)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "9e21ffaa-820b-48c2-a0ed-f9404964f0ee#BatteryHVCoolantFluid_AlphaPict_GUI"_uuid)
+                    .Set(color, "034d9f31-3190-423e-a453-c6f3d0a61106#ColorYellow"_uuid)
+                    .Set(source, "301f722d-0875-44ef-b56c-b3e7e11ccf28#BatteryHVCoolantFluid.png"_uuid),
+
+                Image
+                    .Set(objectName, "BatteryHVHeating.png")
+                    .Set(x, 1345)
+                    .Set(y, 257)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "1591f0e3-7746-4a11-baec-09435fe610ed#BatteryHVHeating.png"_uuid),
+
+                Image
+                    .Set(objectName, "BatteryHVTempSystem.png")
+                    .Set(x, 1345)
+                    .Set(y, 397)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "e4b95846-cd73-465f-ac75-7d3939d6c32d#BatteryHVTempSystem_AlphaPict_GUI"_uuid)
+                    .Set(color, "b5987140-fb67-4ca6-ada6-0a7e71a1d7ff#ColorRed"_uuid)
+                    .Set(source, "61554dd2-fa03-4405-bd22-4d71be84584a#BatteryHVTempSystem.png"_uuid),
+
+                Image
+                    .Set(objectName, "BrakeCompressorError.png")
+                    .Set(x, 1542)
+                    .Set(y, 500)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "eb6b0d6c-e16f-4ab2-b4cb-d49346ed90e9#BrakeCompressorError_AlphaPict_GUI"_uuid)
+                    .Set(color, "fefc12b3-ed8a-4a9f-b337-d264c8bd46f5#BrakeCompressorError_Color_GUI"_uuid)
+                    .Set(source, "bbf03392-0266-4447-8b54-19cd18f27f84#BrakeCompressorError.png"_uuid),
+
+                Image
+                    .Set(objectName, "BrakeCompressorOverheating.png")
+                    .Set(x, 1617)
+                    .Set(y, 467)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "4f5f82c2-9371-4441-b10b-249894470086#BrakeCompressorOverheating_AlphaPict_GUI"_uuid)
+                    .Set(color, "b5987140-fb67-4ca6-ada6-0a7e71a1d7ff#ColorRed"_uuid)
+                    .Set(source, "54322297-cf32-4cc3-ad11-1ba54f4fab55#BrakeCompressorOverheating.png"_uuid),
+
+                Image
+                    .Set(objectName, "ChargeConnector.png")
+                    .Set(x, 1676)
+                    .Set(y, 327)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "9c4db21b-9aea-4f5e-a5be-7088366b3616#ChargeConnector_AlphaPict_GUI"_uuid)
+                    .Set(color, "fde0d210-db94-4b69-bc19-1997caa44382#ChargeConnector_Color_GUI"_uuid)
+                    .Set(source, "f538376f-bd3d-4901-a3dc-bef74e93501d#ChargeConnector.png"_uuid),
+
+                Image
+                    .Set(objectName, "DriveFanHydraulicError.png")
+                    .Set(x, 1542)
+                    .Set(y, 157)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "39dcfbdf-dbf2-4e19-bb81-6c0bdba06bbc#DriveFanHydraulicError_AlphaPict_GUI"_uuid)
+                    .Set(color, "1ac2d47a-7f8e-446f-b620-d936b808e9a3#DriveFanHydraulicError_Color_GUI"_uuid)
+                    .Set(source, "2c32cdcb-9f30-4869-8cc8-ca2a7f636b7a#DriveFanHydraulicError.png"_uuid),
+
+                Image
+                    .Set(objectName, "ExhaustSystem.png")
+                    .Set(x, 1467)
+                    .Set(y, 157)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "60292385-c804-49ba-ae97-e88ec00635d6#ExhaustSystem_AlphaPict_GUI"_uuid)
+                    .Set(color, "034d9f31-3190-423e-a453-c6f3d0a61106#ColorYellow"_uuid)
+                    .Set(source, "a15ce3c8-cb54-441c-9b34-94cefb1911bf#ExhaustSystem.png"_uuid),
+
+                Image
+                    .Set(objectName, "IsolationError.png")
+                    .Set(x, 1664)
+                    .Set(y, 397)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "e749f20b-22fe-43f6-a381-36e1dcda8f0a#IsolationError_AlphaPict_GUI"_uuid)
+                    .Set(color, "afc8e61d-696c-4cc7-bcf0-30b6979fca8e#IsolationError_Color_GUI"_uuid)
+                    .Set(source, "28d45898-c75f-452e-9070-bb77f61a25fb#IsolationError.png"_uuid),
+
+                Image
+                    .Set(objectName, "MotorError.png")
+                    .Set(x, 1392)
+                    .Set(y, 467)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "ac22f203-a085-45b5-b4c6-88606363075e#MotorError_AlphaPict_GUI"_uuid)
+                    .Set(color, "51d8f48e-23ea-45d2-8236-ac91d8d6dc32#MotorError_Color_GUI"_uuid)
+                    .Set(source, "67a10df5-1c7d-4101-8195-edd53eb6989c#MotorError.png"_uuid)
+            ),
+
+        CopyFrom(Window, "04f76ad3-f8cf-44bd-bf6e-665062b4c5ee"_uuid)
+            .Set(width, 1920)
+            .Set(height, 720)
+            .Children(
+                Image
+                    .Set(objectName, "AirPressure_3.png")
+                    .Set(x, 1116)
+                    .Set(y, 46)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "ac1bfb37-052e-4700-9995-210249df6255#AirPressure_3_AlphaPict_GUI"_uuid)
+                    .Set(color, "b5987140-fb67-4ca6-ada6-0a7e71a1d7ff#ColorRed"_uuid)
+                    .Set(source, "eeba154a-386f-4963-ba2d-fa23945e0f45#AirPressure_3.png"_uuid),
+
+                Image
+                    .Set(objectName, "AirPressure_4.png")
+                    .Set(x, 1190)
+                    .Set(y, 46)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "94d2b007-e363-47fb-be81-91822c672fc6#AirPressure_4_AlphaPict_GUI"_uuid)
+                    .Set(color, "b5987140-fb67-4ca6-ada6-0a7e71a1d7ff#ColorRed"_uuid)
+                    .Set(source, "2e6c0e88-997d-4ed1-ad33-36d31d132eb6#AirPressure_4.png"_uuid),
+
+                Image
+                    .Set(objectName, "AirPressure_5.png")
+                    .Set(x, 1264)
+                    .Set(y, 46)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "52ed27ea-91e1-4a8f-b41c-600fe99269d0#AirPressure_5_AlphaPict_GUI"_uuid)
+                    .Set(color, "b5987140-fb67-4ca6-ada6-0a7e71a1d7ff#ColorRed"_uuid)
+                    .Set(source, "810563b4-2c87-4440-9d24-1d4dd35cf456#AirPressure_5.png"_uuid),
+
+                Image
+                    .Set(objectName, "BrakePadWear.png")
+                    .Set(x, 743)
+                    .Set(y, 46)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "bc6c774e-f6cf-4fec-9bb5-0a2c13893d3f#BrakePadWear_AlphaPict_GUI"_uuid)
+                    .Set(color, "034d9f31-3190-423e-a453-c6f3d0a61106#ColorYellow"_uuid)
+                    .Set(source, "a5de8486-a8ee-4557-9a61-e1ee2cee5121#BrakePadWear.png"_uuid),
+
+                Image
+                    .Set(objectName, "BrakeSystemError.png")
+                    .Set(x, 822)
+                    .Set(y, 46)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "02460b16-4ef0-4f72-9f93-8dc656b948c3#BrakeSystemError_AlphaPict_GUI"_uuid)
+                    .Set(color, "b5987140-fb67-4ca6-ada6-0a7e71a1d7ff#ColorRed"_uuid)
+                    .Set(source, "f6190bb0-76c4-4e7d-ab37-1f8f0b026abc#BrakeSystemError.png"_uuid),
+
+                Image
+                    .Set(objectName, "BusBan.png")
+                    .Set(x, 968)
+                    .Set(y, 180)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "803f8e57-f7a9-4f09-952d-80d301ea8877#BusBan.png"_uuid),
+
+                Image
+                    .Set(objectName, "BusReady.png")
+                    .Set(x, 968)
+                    .Set(y, 180)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "0721f348-654d-4416-9deb-52a310e38ed2#BusReady_AlphaPict_GUI"_uuid)
+                    .Set(color, "10070926-56b8-4112-a4c2-fbd8e3cb99ac#ColorGreen"_uuid)
+                    .Set(source, "0b5e05ad-758c-49dd-a172-e2416d569639#BusReady.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateSalonCoolantFluid.png")
+                    .Set(x, 820)
+                    .Set(y, 180)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "912362c8-680c-4c26-9e99-ee0e08aa7af2#ClimateSalonCoolantFluid_AlphaPict_GUI"_uuid)
+                    .Set(color, "a6b40d41-8997-4a20-b0d1-0935e470bc48#ClimateSalonCoolantFluid_Color_GUI"_uuid)
+                    .Set(source, "f7b96608-3edf-43fc-96d1-9a51026c4f7d#ClimateSalonCoolantFluid.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateSalonFlame.png")
+                    .Set(x, 746)
+                    .Set(y, 180)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "a39bfb64-2dfc-49eb-a0a6-b0c1094a1024#ClimateSalonFlame_AlphaPict_GUI"_uuid)
+                    .Set(color, "034d9f31-3190-423e-a453-c6f3d0a61106#ColorYellow"_uuid)
+                    .Set(source, "a870bf0b-ddc3-44de-9079-2d96b16653b0#ClimateSalonFlame.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateSalonHeaterModeEco.png")
+                    .Set(x, 672)
+                    .Set(y, 180)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "4bf88d06-4f61-4adf-95b8-2b8db8599ba8#ClimateSalonHeaterModeEco_AlphaPict_GUI"_uuid)
+                    .Set(color, "10070926-56b8-4112-a4c2-fbd8e3cb99ac#ColorGreen"_uuid)
+                    .Set(source, "8fa94e76-b78b-4eb5-9db7-17723efa8c7f#ClimateSalonHeaterModeEco.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateSalonHeaterModeMain.png")
+                    .Set(x, 672)
+                    .Set(y, 180)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "d12bee20-2e9e-4c44-a7b3-2ec9ef387fbe#ClimateSalonHeaterModeMain_AlphaPict_GUI"_uuid)
+                    .Set(color, "bc1ffdf1-88f0-446b-81a3-460bfcc40cdc#ClimateSalonHeaterModeMain_Color_GUI"_uuid)
+                    .Set(source, "89167333-1f38-4dc5-8a72-3e67d4c09e4e#ClimateSalonHeaterModeMain.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateSalonPreHeating.png")
+                    .Set(x, 672)
+                    .Set(y, 180)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "abdb0dce-3de3-43df-b3ef-b2d966ac74d8#ClimateSalonPreHeating_AlphaPict_GUI"_uuid)
+                    .Set(color, "10070926-56b8-4112-a4c2-fbd8e3cb99ac#ColorGreen"_uuid)
+                    .Set(source, "409796a0-1fb8-40b6-b55d-1b9a69c7e569#ClimateSalonPreHeating.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateSalonPump.png")
+                    .Set(x, 582)
+                    .Set(y, 180)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "248e772b-fc5a-4aca-9731-2182606e5941#ClimateSalonPump_AlphaPict_GUI"_uuid)
+                    .Set(color, "10070926-56b8-4112-a4c2-fbd8e3cb99ac#ColorGreen"_uuid)
+                    .Set(source, "8c3d5493-d374-402e-962e-45fa33b3e047#ClimateSalonPump.png"_uuid),
+
+                Image
+                    .Set(objectName, "DoorBrake.png")
+                    .Set(x, 614)
+                    .Set(y, 246)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "13a97d70-f373-4893-ba4c-2509faf8fe44#DoorBrake_AlphaPict_GUI"_uuid)
+                    .Set(color, "54259f07-2da4-4091-a649-cb99cc249716#DoorBrake_Color_GUI"_uuid)
+                    .Set(source, "b1dc29cf-ff6f-47ce-a47f-2f3d91ff7889#DoorBrake.png"_uuid),
+
+                Image
+                    .Set(objectName, "DriverLeaveChair.png")
+                    .Set(x, 598)
+                    .Set(y, 46)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "74f2203d-4240-4dda-b260-5ddff0895040#DriverLeaveChair.png"_uuid),
+
+                Image
+                    .Set(objectName, "LightFar.png")
+                    .Set(x, 524)
+                    .Set(y, 113)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "2e60a8c1-9cc2-476a-be1a-d7b4252f40cc#LightFar_AlphaPict_GUI"_uuid)
+                    .Set(color, "bf8ceceb-95d1-48fe-9aac-18dcbb36bcbc#ColorBlue"_uuid)
+                    .Set(source, "9aeb1cb0-54a3-4519-82db-568d732f1c6f#LightFar.png"_uuid),
+
+                Image
+                    .Set(objectName, "GURFluid.png")
+                    .Set(x, 889)
+                    .Set(y, 186)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "d82a2a40-aeb0-4369-9662-ada599f22099#GURFluid_AlphaPict_GUI"_uuid)
+                    .Set(color, "b5987140-fb67-4ca6-ada6-0a7e71a1d7ff#ColorRed"_uuid)
+                    .Set(source, "29ced226-56eb-4e16-a1d3-0b38125f3de3#GURFluid.png"_uuid),
+
+                Image
+                    .Set(objectName, "GUROverheat.png")
+                    .Set(x, 894)
+                    .Set(y, 180)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "726871c4-349c-4a44-b067-9c31f8966cbe#GUROverheat.png"_uuid),
+
+                Image
+                    .Set(objectName, "Immobilizer.png")
+                    .Set(x, 1247)
+                    .Set(y, 246)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "da4ec2f0-f2a1-42e4-836b-69ca025fc896#Immobilizer_AlphaPict_GUI"_uuid)
+                    .Set(color, "034d9f31-3190-423e-a453-c6f3d0a61106#ColorYellow"_uuid)
+                    .Set(source, "e4f23724-9f7c-413a-b854-21636e65435d#Immobilizer.png"_uuid),
+
+                Image
+                    .Set(objectName, "Kneeling.png")
+                    .Set(x, 1190)
+                    .Set(y, 180)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "78bda086-f177-4c05-b2ff-8a389a159737#Kneeling_AlphaPict_GUI"_uuid)
+                    .Set(color, "034d9f31-3190-423e-a453-c6f3d0a61106#ColorYellow"_uuid)
+                    .Set(source, "6a52c25c-fef4-4cd9-85b9-a73a5fab0dcc#Kneeling.png"_uuid),
+
+                Image
+                    .Set(objectName, "KneelingAuto.png")
+                    .Set(x, 1190)
+                    .Set(y, 180)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "7dcb6d0a-0fba-4b25-a4db-f4a4d4fd8998#KneelingAuto_AlphaPict_GUI"_uuid)
+                    .Set(color, "00fcfd33-7efd-48b6-8dd2-6457262eb05f#KneelingAuto_Color_GUI"_uuid)
+                    .Set(source, "77d6a64e-c2d4-4250-b116-eeb6c4d945a2#KneelingAuto.png"_uuid),
+
+                Image
+                    .Set(objectName, "LightDaytime.png")
+                    .Set(x, 1338)
+                    .Set(y, 113)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "443219cb-94c9-4e33-a69d-9482196a9e44#LightDaytime_AlphaPict_GUI"_uuid)
+                    .Set(color, "bac5ebff-5b3c-426a-9b43-87d2a0046e4d#LightDaytime_Color_GUI"_uuid)
+                    .Set(source, "808a6536-e804-4cc0-971c-6db730f862f8#LightDaytime.png"_uuid),
+
+                Image
+                    .Set(objectName, "LightFogBack.png")
+                    .Set(x, 1190)
+                    .Set(y, 113)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "621b8b50-a407-4798-8ad0-0c90786fabfe#LightFogBack_AlphaPict_GUI"_uuid)
+                    .Set(color, "034d9f31-3190-423e-a453-c6f3d0a61106#ColorYellow"_uuid)
+                    .Set(source, "48793577-77be-4254-adac-173348fb96eb#LightFogBack.png"_uuid),
+
+                Image
+                    .Set(objectName, "LightFogFront.png")
+                    .Set(x, 1116)
+                    .Set(y, 113)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "0cc73e37-cdc6-4bce-94f1-db57bf6e10b1#LightFogFront_AlphaPict_GUI"_uuid)
+                    .Set(color, "10070926-56b8-4112-a4c2-fbd8e3cb99ac#ColorGreen"_uuid)
+                    .Set(source, "c60f6fff-7379-428b-9885-e4b60884971a#LightFogFront.png"_uuid),
+
+                Image
+                    .Set(objectName, "LightLeft.png")
+                    .Set(x, 820)
+                    .Set(y, 113)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "8799a94d-8f2b-4352-bb43-693b6110e996#LightLeft_AlphaPict_GUI"_uuid)
+                    .Set(color, "10070926-56b8-4112-a4c2-fbd8e3cb99ac#ColorGreen"_uuid)
+                    .Set(source, "16534005-7f9d-4187-b98c-ec234ce0074f#LightLeft.png"_uuid),
+
+                Image
+                    .Set(objectName, "LightNear.png")
+                    .Set(x, 672)
+                    .Set(y, 113)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "8ecf7412-b891-4b1d-96f6-1221bbfd54b7#LightNear_AlphaPict_GUI"_uuid)
+                    .Set(color, "bf8ceceb-95d1-48fe-9aac-18dcbb36bcbc#ColorBlue"_uuid)
+                    .Set(source, "3bd4d4c1-8414-41be-8299-66181fa0c4da#LightNear.png"_uuid),
+
+                Image
+                    .Set(objectName, "LightNearAuto.png")
+                    .Set(x, 672)
+                    .Set(y, 113)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "54ad656c-bbce-4206-8858-4f8647101bb7#LightNearAuto_AlphaPict_GUI"_uuid)
+                    .Set(color, "bf8ceceb-95d1-48fe-9aac-18dcbb36bcbc#ColorBlue"_uuid)
+                    .Set(source, "e3bc6185-ec6c-4031-8942-3f8eb39af9f0#LightNearAuto.png"_uuid),
+
+                Image
+                    .Set(objectName, "LightRight.png")
+                    .Set(x, 1042)
+                    .Set(y, 113)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "9e94b7e9-1971-4688-8973-0dbac6fe2bf5#LightRight_AlphaPict_GUI"_uuid)
+                    .Set(color, "10070926-56b8-4112-a4c2-fbd8e3cb99ac#ColorGreen"_uuid)
+                    .Set(source, "50344a86-1a7c-4cc1-b0f4-cabcce0231b5#LightRight.png"_uuid),
+
+                Image
+                    .Set(objectName, "LightSide.png")
+                    .Set(x, 746)
+                    .Set(y, 113)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "74c9cb8a-3f73-4b2d-a2d5-ef7c757ff80a#LightSide_AlphaPict_GUI"_uuid)
+                    .Set(color, "10070926-56b8-4112-a4c2-fbd8e3cb99ac#ColorGreen"_uuid)
+                    .Set(source, "ff3ef098-216a-449e-84d7-82f5c9faa4d8#LightSide.png"_uuid),
+
+                Image
+                    .Set(objectName, "MotorHatch.png")
+                    .Set(x, 967)
+                    .Set(y, 177)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "8bfccbc5-35e2-4b7a-9e52-74b68966402f#MotorHatch_AlphaPict_GUI"_uuid)
+                    .Set(color, "b5987140-fb67-4ca6-ada6-0a7e71a1d7ff#ColorRed"_uuid)
+                    .Set(source, "d6747ac5-39af-426f-882f-12d4cb981816#MotorHatch.png"_uuid),
+
+                Image
+                    .Set(objectName, "ParkingBrakeError.png")
+                    .Set(x, 1042)
+                    .Set(y, 46)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "888e01bd-fd6c-4bde-a299-1a327e8422dd#ParkingBrakeError_AlphaPict_GUI"_uuid)
+                    .Set(color, "8c668354-33f1-4776-9266-8c083bc87ee4#ParkingBrakeError_Color_GUI"_uuid)
+                    .Set(source, "ab19e1db-7b1b-42e3-8958-ac38e17c84a6#ParkingBrakeError.png"_uuid),
+
+                Image
+                    .Set(objectName, "SeatBelt.png")
+                    .Set(x, 598)
+                    .Set(y, 46)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "f4d0e146-4b94-485a-972d-e2c81669a18e#SeatBelt_AlphaPict_GUI"_uuid)
+                    .Set(color, "b5987140-fb67-4ca6-ada6-0a7e71a1d7ff#ColorRed"_uuid)
+                    .Set(source, "0858ef2a-b77e-41c4-b249-0ccf4fbc4103#SeatBelt.png"_uuid),
+
+                Image
+                    .Set(objectName, "Stop.png")
+                    .Set(x, 920)
+                    .Set(y, 64)
+                    .Set(width, 79)
+                    .Set(height, 22)
+                    .Set(opacity, "738c569b-2d0d-4221-9b65-c82f1c273ba4#Stop_AlphaPict_GUI"_uuid)
+                    .Set(color, "b5987140-fb67-4ca6-ada6-0a7e71a1d7ff#ColorRed"_uuid)
+                    .Set(source, "3ab96e0a-937e-41cb-900f-ada81147b409#Stop.png"_uuid),
+
+                Image
+                    .Set(objectName, "Tachograph.png")
+                    .Set(x, 672)
+                    .Set(y, 46)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "1a98cfad-d364-4ac7-86ba-f872ded68682#Tachograph_AlphaPict_GUI"_uuid)
+                    .Set(color, "abe3e724-4673-4055-84a7-45f6356dcebe#Tachograph_Color_GUI"_uuid)
+                    .Set(source, "14c53497-e003-4ded-8dba-4600cd3fd08f#Tachograph.png"_uuid),
+
+                Image
+                    .Set(objectName, "TirePressure.png")
+                    .Set(x, 1279)
+                    .Set(y, 180)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "c72234d7-e329-470c-bfa8-690e692d6dce#TirePressure_AlphaPict_GUI"_uuid)
+                    .Set(color, "034d9f31-3190-423e-a453-c6f3d0a61106#ColorYellow"_uuid)
+                    .Set(source, "d650b802-3b5e-4a69-b8f0-b408133e0122#TirePressure.png"_uuid),
+
+                Image
+                    .Set(objectName, "TransportPosition.png")
+                    .Set(x, 1042)
+                    .Set(y, 180)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "851dc47b-85e2-4452-9e9f-fa5bb546169d#AirSuspensionError_AlphaPict_GUI"_uuid)
+                    .Set(color, "034d9f31-3190-423e-a453-c6f3d0a61106#ColorYellow"_uuid)
+                    .Set(source, "e4e1a7b2-cc5c-43d2-89c2-e2af4885a22c#TransportPosition.png"_uuid),
+
+                Image
+                    .Set(objectName, "TransportPositionUp.png")
+                    .Set(x, 1116)
+                    .Set(y, 180)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "652c218e-1138-4b4b-aefd-9d72f4b1a5fb#TransportPositionUp_AlphaPict_GUI"_uuid)
+                    .Set(color, "034d9f31-3190-423e-a453-c6f3d0a61106#ColorYellow"_uuid)
+                    .Set(source, "1e94c275-fedf-42e5-801f-c69b1c088164#TransportPositionUp.png"_uuid),
+
+                Image
+                    .Set(objectName, "TransportPositionDown.png")
+                    .Set(x, 1116)
+                    .Set(y, 180)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "9d214eef-bfd8-4540-ac4f-89724c6c673f#TransportPositionDown_AlphaPict_GUI"_uuid)
+                    .Set(color, "034d9f31-3190-423e-a453-c6f3d0a61106#ColorYellow"_uuid)
+                    .Set(source, "0d55ba5c-c29f-4a99-8156-b2f8fd397e56#TransportPositionDown.png"_uuid),
+
+                Image
+                    .Set(objectName, "TransportPosition.png")
+                    .Set(x, 1116)
+                    .Set(y, 180)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "652c218e-1138-4b4b-aefd-9d72f4b1a5fb#TransportPositionUp_AlphaPict_GUI"_uuid)
+                    .Set(color, "034d9f31-3190-423e-a453-c6f3d0a61106#ColorYellow"_uuid)
+                    .Set(source, "e4e1a7b2-cc5c-43d2-89c2-e2af4885a22c#TransportPosition.png"_uuid)
+            ),
+
+        CopyFrom(Window, "0c9d6bf5-8fb3-40eb-bf4a-ef3a7d8e2053"_uuid)
+            .Set(width, 1920)
+            .Set(height, 720)
+            .Children(
+                Image
+                    .Set(objectName, "ClimateSalonAuto.png")
+                    .Set(x, 1190)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "6938294a-1b91-4427-b985-509c3203c6a4#ClimateSalonAuto_AlphaPict_GUI"_uuid)
+                    .Set(color, "ac324c9a-e123-4aa9-9854-e1c0f6726c07#ColorWhite"_uuid)
+                    .Set(source, "49e8b0ff-1f7d-443d-bba7-1616a3a56582#ClimateSalonAuto.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateSalonConditioner.png")
+                    .Set(x, 1190)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "2de595cf-d49a-41cb-a98e-aa84d87e1015#ClimateSalonConditioner_AlphaPict_GUI"_uuid)
+                    .Set(color, "ac324c9a-e123-4aa9-9854-e1c0f6726c07#ColorWhite"_uuid)
+                    .Set(source, "17726e7d-c111-4c7a-a522-3d0b3dff6103#ClimateSalonConditioner.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateSalonConditionerError.png")
+                    .Set(x, 1190)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "8db9dcc1-4302-416e-a204-69c98d716223#ClimateSalonConditionerError.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateSalonHeatingError.png")
+                    .Set(x, 1264)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "a6d6562b-681b-4442-8819-67cd84f2232a#ClimateSalonHeatingError_AlphaPict_GUI"_uuid)
+                    .Set(color, "b5987140-fb67-4ca6-ada6-0a7e71a1d7ff#ColorRed"_uuid)
+                    .Set(source, "22a22195-287d-4677-b291-da34736240ca#ClimateSalonHeatingError.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateSalonHeatingSpeedOne.png")
+                    .Set(x, 1264)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "f3729f56-59b7-4253-ab44-e129f6a16ec7#ClimateSalonHeatingSpeedOne_AlphaPict_GUI"_uuid)
+                    .Set(color, "ac324c9a-e123-4aa9-9854-e1c0f6726c07#ColorWhite"_uuid)
+                    .Set(source, "15bf01df-4325-456a-b365-c3da32ea57ad#ClimateSalonHeatingSpeedOne.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateSalonHeatingSpeedTwo.png")
+                    .Set(x, 1264)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "c688435c-c757-49a3-a4ca-76a563843fda#ClimateSalonHeatingSpeedTwo_AlphaPict_GUI"_uuid)
+                    .Set(color, "ac324c9a-e123-4aa9-9854-e1c0f6726c07#ColorWhite"_uuid)
+                    .Set(source, "903f764a-363c-416f-8212-182656fe4f6f#ClimateSalonHeatingSpeedTwo.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateDriverAirCircuit.png")
+                    .Set(x, 746)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "0983ed35-db46-49d2-a4ad-3a1e1748f73e#ClimateDriverAirCircuit.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateDriverAirSupplyDown.png")
+                    .Set(x, 968)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "38bb68d3-d7f3-4a4b-befd-b0b9922dc613#ClimateDriverAirSupplyDown.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateDriverAirSupplyDownAndGlass.png")
+                    .Set(x, 968)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "d0a81ce1-45db-43d6-8cfa-cd74678c389b#ClimateDriverAirSupplyDownAndGlass.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateDriverAirSupplyUp.png")
+                    .Set(x, 968)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "a6397544-687a-410e-ab87-cb3199da1d64#ClimateDriverAirSupplyUp.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateDriverAirSupplyUpAndDown.png")
+                    .Set(x, 968)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "4894cd89-1a47-40fe-9a6c-1e1e0121dfb9#ClimateDriverAirSupplyUpAndDown.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateDriverAuto.png")
+                    .Set(x, 672)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "e8011018-cf3c-4d3e-9837-e7a96a4423f6#ClimateDriverAuto.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateDriverChairHeating.png")
+                    .Set(x, 820)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "2b345a1e-4df4-4d22-9aef-69b96b47cec8#ClimateDriverChairHeating_AlphaPict_GUI"_uuid)
+                    .Set(color, "9860d900-1fa0-4ad3-acfe-bc561aff4511#ClimateDriverChairHeating_Color_GUI"_uuid)
+                    .Set(source, "d6b62f69-02c9-4e6e-b734-b40b106330e6#ClimateDriverChairHeating.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateDriverConditioner.png")
+                    .Set(x, 672)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "1a8f4440-4191-46cf-8942-0da7eaa28a0f#ClimateDriverConditioner.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateDriverConditionerError.png")
+                    .Set(x, 672)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "f979e04d-4c41-4366-8f2d-8cad21df68c3#ClimateDriverConditionerError.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateDriverFanIn.png")
+                    .Set(x, 746)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "a1bf3bbe-7eed-46dc-a6a9-90d239b25eb0#ClimateDriverFanIn_AlphaPict_GUI"_uuid)
+                    .Set(color, "ac324c9a-e123-4aa9-9854-e1c0f6726c07#ColorWhite"_uuid)
+                    .Set(source, "3323863e-2884-49f1-9551-9c1c2ec3ee7d#ClimateDriverFanIn.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateDriverFanOut.png")
+                    .Set(x, 746)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "1bd48424-51e9-49df-b973-912c9cd1b9fa#ClimateDriverFanOut_AlphaPict_GUI"_uuid)
+                    .Set(color, "ac324c9a-e123-4aa9-9854-e1c0f6726c07#ColorWhite"_uuid)
+                    .Set(source, "ed77f17e-febe-4b2a-bc01-5896d57e1822#ClimateDriverFanOut.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateDriverGlassFrontHeating.png")
+                    .Set(x, 598)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "e99a365c-0eca-4b65-8531-30e10817f09d#ClimateDriverGlassFrontHeating_AlphaPict_GUI"_uuid)
+                    .Set(color, "be40ba40-99e6-4300-9b10-7dc504aed2c0#ClimateDriverGlassFrontHeating_Color_GUI"_uuid)
+                    .Set(source, "5a4195e5-5710-4efd-b60b-0a68f114790b#ClimateDriverGlassFrontHeating.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateDriverGlassFrontHeatingSpeedOne.png")
+                    .Set(x, 598)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "8fe8fd59-b749-4fcd-b3e1-de103b38be8d#ClimateDriverGlassFrontHeatingSpeedOne_AlphaPict_GUI"_uuid)
+                    .Set(color, "034d9f31-3190-423e-a453-c6f3d0a61106#ColorYellow"_uuid)
+                    .Set(source, "92690497-7fe0-41a2-b2b6-4c52647047b2#ClimateDriverGlassFrontHeatingSpeedOne.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateDriverGlassFrontHeatingSpeedThree.png")
+                    .Set(x, 598)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "b852f34a-84c9-4e59-b155-2b0c92697974#ClimateDriverGlassFrontHeatingSpeedThree_AlphaPict_GUI"_uuid)
+                    .Set(color, "034d9f31-3190-423e-a453-c6f3d0a61106#ColorYellow"_uuid)
+                    .Set(source, "ee40b39a-903e-4a65-bd21-a0ec23134ef7#ClimateDriverGlassFrontHeatingSpeedThree.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateDriverGlassFrontHeatingSpeedTwo.png")
+                    .Set(x, 598)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "8dd2a503-8ef3-4858-81b9-98f79085d0d7#ClimateDriverGlassFrontHeatingSpeedTwo_AlphaPict_GUI"_uuid)
+                    .Set(color, "034d9f31-3190-423e-a453-c6f3d0a61106#ColorYellow"_uuid)
+                    .Set(source, "1521321f-c6a7-4759-b144-010d9fdcda78#ClimateDriverGlassFrontHeatingSpeedTwo.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateDriverHeatingError.png")
+                    .Set(x, 894)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "80463bc3-f6a1-4160-8755-2142d2569c7d#ClimateDriverHeatingError_AlphaPict_GUI"_uuid)
+                    .Set(color, "b5987140-fb67-4ca6-ada6-0a7e71a1d7ff#ColorRed"_uuid)
+                    .Set(source, "973c4beb-6164-4a15-bcb6-55f7887259fe#ClimateDriverHeatingError.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateDriverHeatingSpeedOne.png")
+                    .Set(x, 894)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "941f5c75-976d-41d9-b82a-b2eb1ba72d2d#ClimateDriverHeatingSpeedOne_AlphaPict_GUI"_uuid)
+                    .Set(color, "10070926-56b8-4112-a4c2-fbd8e3cb99ac#ColorGreen"_uuid)
+                    .Set(source, "7b74559b-b761-459a-bcb5-4635a1158e61#ClimateDriverHeatingSpeedOne.png"_uuid),
+
+                Image
+                    .Set(objectName, "ClimateDriverHeatingSpeedTwo.png")
+                    .Set(x, 894)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "2b20ad58-fa00-458a-af23-12d4423c57c7#ClimateDriverHeatingSpeedTwo_AlphaPict_GUI"_uuid)
+                    .Set(color, "10070926-56b8-4112-a4c2-fbd8e3cb99ac#ColorGreen"_uuid)
+                    .Set(source, "78f9e960-12cf-4d04-9818-cb9a8de5de32#ClimateDriverHeatingSpeedTwo.png"_uuid),
+
+                Text
+                    .Set(objectName, "TempDriver")
+                    .Set(x, 1025)
+                    .Set(y, 618)
+                    .Set(width, 63)
+                    .Set(height, 49)
+                    .Set(alignment, TextAlign::TopRight)
+                    .Set(color, 0xFFFFFFFF)
+                    .Set(fontFamily, "f2e636d3-025a-408a-9319-39c1f5e97369#Roboto-Medium.ttf"_uuid)
+                    .Set(fontSize, 49)
+                    .Set(text, "20°"),
+
+                Text
+                    .Set(objectName, "TempDriver")
+                    .Set(x, 1114)
+                    .Set(y, 618)
+                    .Set(width, 63)
+                    .Set(height, 49)
+                    .Set(color, 0xFFFFFFFF)
+                    .Set(fontFamily, "f2e636d3-025a-408a-9319-39c1f5e97369#Roboto-Medium.ttf"_uuid)
+                    .Set(fontSize, 49)
+                    .Set(text, "20°")
+            ),
+
+        CopyFrom(Window, "17e9229c-5bb9-443b-b3d8-c37b59d4c465"_uuid)
+            .Set(width, 1920)
+            .Set(height, 720)
+            .Children(
+                Image
+                    .Set(objectName, "AngleOfRotation.png")
+                    .Set(x, 458)
+                    .Set(y, 572)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "709d4ff1-55ad-48c1-8033-daeae593d5ac#AngleOfRotation_AlphaPict_GUI"_uuid)
+                    .Set(color, "77af6033-5d88-463d-b2b9-944c9ff7b43c#AngleOfRotation_Color_GUI"_uuid)
+                    .Set(source, "6a375acb-8cfb-4be9-bcb5-dfbceb8144cf#AngleOfRotation.png"_uuid),
+
+                Image
+                    .Set(objectName, "Beacon.png")
+                    .Set(x, 968)
+                    .Set(y, 522)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "af26e74c-4130-40f7-bc02-c7516c9c02da#Beacon.png"_uuid),
+
+                Image
+                    .Set(objectName, "DisabledRequest.png")
+                    .Set(x, 894)
+                    .Set(y, 522)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "42f478ab-4830-4355-886f-9f05ea057d5b#DisabledRequest_AlphaPict_GUI"_uuid)
+                    .Set(color, "034d9f31-3190-423e-a453-c6f3d0a61106#ColorYellow"_uuid)
+                    .Set(source, "fc311a8c-b012-49b8-b1ce-0d8417510cf5#DisabledRequest.png"_uuid),
+
+                Image
+                    .Set(objectName, "DriverLight.png")
+                    .Set(x, 746)
+                    .Set(y, 522)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "40aaeedf-8c2c-41ff-a0ca-3315eddefda6#DriverLight.png"_uuid),
+
+                Image
+                    .Set(objectName, "ExternalLightError.png")
+                    .Set(x, 820)
+                    .Set(y, 522)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "66369252-b526-4706-b672-f44f838c412d#ExternalLightError.png"_uuid),
+
+                Image
+                    .Set(objectName, "FlightIndicator.png")
+                    .Set(x, 537)
+                    .Set(y, 522)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "37db5691-8ca0-445a-8b19-02ae653a9c9c#FlightIndicator_AlphaPict_GUI"_uuid)
+                    .Set(color, "10070926-56b8-4112-a4c2-fbd8e3cb99ac#ColorGreen"_uuid)
+                    .Set(source, "c3513587-e0e7-4624-8fed-d2ec4d63c00c#FlightIndicator.png"_uuid),
+
+                Image
+                    .Set(objectName, "GlassHeating.png")
+                    .Set(x, 1116)
+                    .Set(y, 522)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "6b8f968a-31ed-420a-8ec3-fc16f718d976#GlassHeating_AlphaPict_GUI"_uuid)
+                    .Set(color, "10070926-56b8-4112-a4c2-fbd8e3cb99ac#ColorGreen"_uuid)
+                    .Set(source, "7bc62ddb-4831-49f0-bfa0-f2c5873a59e7#GlassHeating.png"_uuid),
+
+                Image
+                    .Set(objectName, "MirrorHeating.png")
+                    .Set(x, 1042)
+                    .Set(y, 522)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "15649dd9-1371-41fb-9bc1-c55a4fd19dfb#MirrorHeating_AlphaPict_GUI"_uuid)
+                    .Set(color, "10070926-56b8-4112-a4c2-fbd8e3cb99ac#ColorGreen"_uuid)
+                    .Set(source, "7e0748ba-7bf5-42a9-91fc-944d09174fcc#MirrorHeating.png"_uuid),
+
+                Image
+                    .Set(objectName, "RampError.png")
+                    .Set(x, 894)
+                    .Set(y, 522)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "b649e5f5-be48-4a05-a8f1-60e0bfabc627#Ramp_AlphaPict_GUI"_uuid)
+                    .Set(color, "d9a4ab0d-c723-44e5-bdee-2de9aab62eeb#RampError_Color_GUI"_uuid)
+                    .Set(source, "8e157d2e-2f1b-49a1-b15e-d294a649e72a#RampError.png"_uuid),
+
+                Image
+                    .Set(objectName, "SalonLightPer100.png")
+                    .Set(x, 672)
+                    .Set(y, 522)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "782823f5-90c9-4b75-aee9-512ba66c977c#SalonLightPer100_AlphaPict_GUI"_uuid)
+                    .Set(color, "034d9f31-3190-423e-a453-c6f3d0a61106#ColorYellow"_uuid)
+                    .Set(source, "9822d50f-6b97-4206-b54e-fed002bc427e#SalonLightPer100.png"_uuid),
+
+                Image
+                    .Set(objectName, "SalonLightPer50.png")
+                    .Set(x, 672)
+                    .Set(y, 522)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "1717c13a-86b9-40af-b4c2-250b65df73ae#SalonLightPer50_AlphaPict_GUI"_uuid)
+                    .Set(color, "034d9f31-3190-423e-a453-c6f3d0a61106#ColorYellow"_uuid)
+                    .Set(source, "7b861eac-1b13-446f-9eda-4adf2e43c4b3#SalonLightPer50.png"_uuid),
+
+                Image
+                    .Set(objectName, "WasherFluid.png")
+                    .Set(x, 1390)
+                    .Set(y, 568)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "242826f8-c8c3-4dd9-aa88-4c68b88f733d#WasherFluid_AlphaPict_GUI"_uuid)
+                    .Set(color, "034d9f31-3190-423e-a453-c6f3d0a61106#ColorYellow"_uuid)
+                    .Set(source, "21510b09-1c42-4a3d-84b8-f88c74a5b985#WasherFluid.png"_uuid),
+
+                Image
+                    .Set(objectName, "WindshieldAuto.png")
+                    .Set(x, 1313)
+                    .Set(y, 522)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "db0969e2-2349-4cef-b172-0c7d39441955#WindshieldAuto_AlphaPict_GUI"_uuid)
+                    .Set(color, "10070926-56b8-4112-a4c2-fbd8e3cb99ac#ColorGreen"_uuid)
+                    .Set(source, "55cbc9cf-4860-4d7e-a8a9-7e551811659a#WindshieldAuto.png"_uuid),
+
+                Image
+                    .Set(objectName, "WindshieldFitful.png")
+                    .Set(x, 1313)
+                    .Set(y, 522)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "e2eb0959-3fcf-462d-bc27-ab7e7e3003a5#WindshieldFitful_AlphaPict_GUI"_uuid)
+                    .Set(color, "10070926-56b8-4112-a4c2-fbd8e3cb99ac#ColorGreen"_uuid)
+                    .Set(source, "0ffb1ea5-0a8e-47a8-bdae-ece5d9000275#WindshieldFitful.png"_uuid),
+
+                Image
+                    .Set(objectName, "WindshieldSpeedOne.png")
+                    .Set(x, 1313)
+                    .Set(y, 522)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "b2ef04d0-a3e6-4d03-84b5-f600a9e4c1c0#WindshieldSpeedOne_AlphaPict_GUI"_uuid)
+                    .Set(color, "10070926-56b8-4112-a4c2-fbd8e3cb99ac#ColorGreen"_uuid)
+                    .Set(source, "d0ce5725-76e2-47f0-96c2-6d4f14e645b1#WindshieldSpeedOne.png"_uuid),
+
+                Image
+                    .Set(objectName, "WindshieldSpeedTwo.png")
+                    .Set(x, 1313)
+                    .Set(y, 522)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "3e1f9646-3151-4240-b7ca-c85996f3cc9b#WindshieldSpeedTwo_AlphaPict_GUI"_uuid)
+                    .Set(color, "10070926-56b8-4112-a4c2-fbd8e3cb99ac#ColorGreen"_uuid)
+                    .Set(source, "35e1314d-8633-49c0-b5f6-a8adbc176c4f#WindshieldSpeedTwo.png"_uuid),
+
+                Image
+                    .Set(objectName, "WiperHeating.png")
+                    .Set(x, 1190)
+                    .Set(y, 522)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "1ae09421-2584-45e9-825a-eabd3adb0c13#WiperHeating_AlphaPict_GUI"_uuid)
+                    .Set(color, "034d9f31-3190-423e-a453-c6f3d0a61106#ColorYellow"_uuid)
+                    .Set(source, "5224aaf4-8b6d-429f-ab58-648aa9ce7a86#WiperHeating.png"_uuid)
+            ),
+
+        CopyFrom(Window, "b3d00ac4-702e-4d2c-bb37-18a34f83718e"_uuid)
+            .Set(width, 1920)
+            .Set(height, 720)
+            .Children(
+                Image
+                    .Set(objectName, "AirPressure_1.png")
+                    .Set(x, 15)
+                    .Set(y, 46)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(color, "6cf03c63-4527-4117-b5ff-8168dd503a25#AirPress1_Color_GUI"_uuid)
+                    .Set(source, "cbca292e-fc78-4f7b-9527-cd887285a1a6#AirPressure_1.png"_uuid),
+
+                Image
+                    .Set(objectName, "AirPressure_2.png")
+                    .Set(x, 15)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(color, "5fdc4377-5773-4235-af80-212293b1af80#AirPress2_Color_GUI"_uuid)
+                    .Set(source, "7c548a62-a499-443a-ad91-b3cd83051863#AirPressure_2.png"_uuid)
+            ),
+
+        CopyFrom(Window, "cffb614e-7213-49b3-9d44-4dabc27b905e"_uuid)
+            .Set(width, 1920)
+            .Set(height, 720)
+            .Children(
+                Item
+                    .Set(objectName, "AirPressure_1")
+                    .Set(x, 25)
+                    .Set(y, -3)
+                    .Set(width, 722)
+                    .Set(height, 722)
+                    .Children(
+                        ArcSegment
+                            .Set(objectName, "Scale_1")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(rotation, -33.75f)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "923b1b3b-0ab0-477d-af90-4f288a30b8e0#AirPress1_Scale1_Color_GUI"_uuid)
+                            .Set(radiusInner, 355),
+
+                        ArcSegment
+                            .Set(objectName, "Scale_2")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(rotation, -28.125f)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "ba2b144c-6564-4c93-93f6-7aed1e518b3d#AirPress1_Scale2_Color_GUI"_uuid)
+                            .Set(radiusInner, 355),
+
+                        ArcSegment
+                            .Set(objectName, "Scale_3")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(rotation, -22.5f)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "d2596cf9-c788-448d-ac5f-e3e69bdbbff9#AirPress1_Scale3_Color_GUI"_uuid)
+                            .Set(radiusInner, 355),
+
+                        ArcSegment
+                            .Set(objectName, "Scale_4")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(rotation, -16.875f)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "7f2d90ee-24f4-4796-8768-70e85aaf147c#AirPress1_Scale4_Color_GUI"_uuid)
+                            .Set(radiusInner, 355),
+
+                        ArcSegment
+                            .Set(objectName, "Scale_5")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(rotation, -11.25f)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "32eeb89a-1e34-4c20-aab5-7a1c052bbe00#AirPress1_Scale5_Color_GUI"_uuid)
+                            .Set(radiusInner, 355),
+
+                        ArcSegment
+                            .Set(objectName, "Scale_6")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(rotation, -5.625f)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "115cf347-cc63-49db-bb6e-afef6e2ac3ac#AirPress1_Scale6_Color_GUI"_uuid)
+                            .Set(radiusInner, 355),
+
+                        ArcSegment
+                            .Set(objectName, "Scale_7")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "55be5e0f-bca3-448d-895a-c0e0ae3f9b68#AirPress1_Scale7_Color_GUI"_uuid)
+                            .Set(radiusInner, 355)
+                    ),
+
+                Item
+                    .Set(objectName, "AirPressure_2")
+                    .Set(x, 25)
+                    .Set(y, -3)
+                    .Set(width, 722)
+                    .Set(height, 722)
+                    .Set(rotation, -61.9f)
+                    .Children(
+                        ArcSegment
+                            .Set(objectName, "Scale_1")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "86d8a05b-44fa-404f-9b63-4026e09bd95d#AirPress2_Scale1_Color_GUI"_uuid)
+                            .Set(radiusInner, 355),
+
+                        ArcSegment
+                            .Set(objectName, "Scale_2")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(rotation, -5.625f)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "6b1760b4-e139-49eb-82d5-e11715b1a0d9#AirPress2_Scale2_Color_GUI"_uuid)
+                            .Set(radiusInner, 355),
+
+                        ArcSegment
+                            .Set(objectName, "Scale_3")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(rotation, -11.25f)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "70c5342f-6129-4074-93f2-ce2722e4f668#AirPress2_Scale3_Color_GUI"_uuid)
+                            .Set(radiusInner, 355),
+
+                        ArcSegment
+                            .Set(objectName, "Scale_4")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(rotation, -16.875f)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "357015c2-f2e1-48da-a96e-974934031ce6#AirPress2_Scale4_Color_GUI"_uuid)
+                            .Set(radiusInner, 355),
+
+                        ArcSegment
+                            .Set(objectName, "Scale_5")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(rotation, -22.5f)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "321fe9ea-904c-4c6a-80b4-9609fb5a11f8#AirPress2_Scale5_Color_GUI"_uuid)
+                            .Set(radiusInner, 355),
+
+                        ArcSegment
+                            .Set(objectName, "Scale_6")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(rotation, -28.125f)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "50f7858e-6558-4dfe-92a7-063f0e9acabf#AirPress2_Scale6_Color_GUI"_uuid)
+                            .Set(radiusInner, 355),
+
+                        ArcSegment
+                            .Set(objectName, "Scale_7")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(rotation, -33.75f)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "71e92d70-b52e-4219-8cc7-daa875216dfa#AirPress2_Scale7_Color_GUI"_uuid)
+                            .Set(radiusInner, 355)
+                    ),
+
+                Item
+                    .Set(objectName, "BatteryLV")
+                    .Set(x, 1173)
+                    .Set(y, -3)
+                    .Set(width, 722)
+                    .Set(height, 722)
+                    .Set(rotation, 180)
+                    .Children(
+                        ArcSegment
+                            .Set(objectName, "Scale_1")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(rotation, -33.75f)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "302a010f-c4a4-4346-a6f2-fadcd37d64af#BatteryLV_Scale1_Color_GUI1"_uuid)
+                            .Set(radiusInner, 355),
+
+                        ArcSegment
+                            .Set(objectName, "Scale_2")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(rotation, -28.125f)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "eb125cd7-18d0-4b8d-ac38-4eb5e8061be0#BatteryLV_Scale2_Color_GUI1"_uuid)
+                            .Set(radiusInner, 355),
+
+                        ArcSegment
+                            .Set(objectName, "Scale_3")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(rotation, -22.5f)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "a2d40937-e225-4039-82e8-b3df1a087314#BatteryLV_Scale3_Color_GUI1"_uuid)
+                            .Set(radiusInner, 355),
+
+                        ArcSegment
+                            .Set(objectName, "Scale_4")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(rotation, -16.875f)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "7b76eca0-2d96-4d63-8c4b-b7be7336acca#BatteryLV_Scale4_Color_GUI1"_uuid)
+                            .Set(radiusInner, 355),
+
+                        ArcSegment
+                            .Set(objectName, "Scale_5")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(rotation, -11.25f)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "16cc16b3-cc83-4e84-b6c6-fed28bf4cd90#BatteryLV_Scale5_Color_GUI1"_uuid)
+                            .Set(radiusInner, 355),
+
+                        ArcSegment
+                            .Set(objectName, "Scale_6")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(rotation, -5.625f)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "2b07007a-3e2e-428b-845b-dbbf18c2a675#BatteryLV_Scale6_Color_GUI1"_uuid)
+                            .Set(radiusInner, 355),
+
+                        ArcSegment
+                            .Set(objectName, "Scale_7")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "b4164c60-849f-47f7-b457-9824fac75915#BatteryLV_Scale7_Color_GUI1"_uuid)
+                            .Set(radiusInner, 355)
+                    ),
+
+                Item
+                    .Set(objectName, "BatteryHV")
+                    .Set(x, 1173)
+                    .Set(y, -3)
+                    .Set(width, 722)
+                    .Set(height, 722)
+                    .Set(rotation, 118.15f)
+                    .Children(
+                        ArcSegment
+                            .Set(objectName, "Scale_1")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "af317fa5-1c35-4bda-88a7-16c986c659bc#BatteryHV_Scale1_Color_GUI1"_uuid)
+                            .Set(radiusInner, 355),
+
+                        ArcSegment
+                            .Set(objectName, "Scale_2")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(rotation, -5.625f)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "8007480a-85c0-4277-a5f0-4ae263d787ad#BatteryHV_Scale2_Color_GUI1"_uuid)
+                            .Set(radiusInner, 355),
+
+                        ArcSegment
+                            .Set(objectName, "Scale_3")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(rotation, -11.25f)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "7aaf2c20-7c4d-419a-8764-a5b52e423116#BatteryHV_Scale3_Color_GUI1"_uuid)
+                            .Set(radiusInner, 355),
+
+                        ArcSegment
+                            .Set(objectName, "Scale_4")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(rotation, -16.875f)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "3405c9e9-1baf-4257-8a95-59cb73de85ce#BatteryHV_Scale4_Color_GUI1"_uuid)
+                            .Set(radiusInner, 355),
+
+                        ArcSegment
+                            .Set(objectName, "Scale_5")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(rotation, -22.5f)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "4e48636a-488f-46e1-a411-65009d335a2f#BatteryHV_Scale5_Color_GUI1"_uuid)
+                            .Set(radiusInner, 355),
+
+                        ArcSegment
+                            .Set(objectName, "Scale_6")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(rotation, -28.125f)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "64231343-30bb-4310-a154-a82b9542ba01#BatteryHV_Scale6_Color_GUI1"_uuid)
+                            .Set(radiusInner, 355),
+
+                        ArcSegment
+                            .Set(objectName, "Scale_7")
+                            .Set(width, 722)
+                            .Set(height, 722)
+                            .Set(rotation, -33.75f)
+                            .Set(angle1, 225.3f)
+                            .Set(angle2, 230.3f)
+                            .Set(color, "2c3be903-ec6a-42b7-ab3f-78bf91c4c778#BatteryHV_Scale7_Color_GUI1"_uuid)
+                            .Set(radiusInner, 355)
+                    )
+            ),
+
+        CopyFrom(Window, "6dad5949-80a6-4e02-bb6b-c40bedbf1f58"_uuid)
+            .Set(width, 590)
+            .Set(height, 565)
+            .Children(
+                Image
+                    .Set(objectName, "ABS.png")
+                    .Set(x, 268)
+                    .Set(y, 180)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "61308e22-3e03-44c3-93b6-3709403f1127#ABS_AlphaPict_GUI"_uuid)
+                    .Set(color, "8d53416f-bf4c-4c98-a942-591841d36093#ABS_Color_GUI"_uuid)
+                    .Set(source, "df823922-e843-485f-9bde-5273ae1bea8b#ABS.png"_uuid),
+
+                Image
+                    .Set(objectName, "CruiseControl.png")
+                    .Set(x, 356)
+                    .Set(y, 242)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "09af9b30-e613-4247-94ef-aac330891cb2#CruiseControl_AlphaPict_GUI"_uuid)
+                    .Set(color, "10070926-56b8-4112-a4c2-fbd8e3cb99ac#ColorGreen"_uuid)
+                    .Set(source, "2a136f29-ef69-4fd6-ba8f-6757012a29fd#CruiseControl.png"_uuid),
+
+                Image
+                    .Set(objectName, "CruiseControlAdaptive.png")
+                    .Set(x, 356)
+                    .Set(y, 242)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "e2ba495f-f114-4a00-86ae-14af9c412247#CruiseControlAdaptive.png"_uuid),
+
+                Image
+                    .Set(objectName, "EBS.png")
+                    .Set(x, 268)
+                    .Set(y, 180)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "e1e6c328-1fbf-4bc9-963c-dc50da7a3971#EBS_AlphaPict_GUI"_uuid)
+                    .Set(color, "addf1eb8-6adb-4031-ae60-01f2396de839#EBS_Color_GUI"_uuid)
+                    .Set(source, "fd676a89-ecd1-4d1b-a9d6-5c3859c07e23#EBS.png"_uuid),
+
+                Image
+                    .Set(objectName, "ESP.png")
+                    .Set(x, 506)
+                    .Set(y, 246)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "a27af4a8-440d-4d76-bfd0-873dc230e1b5#ESP_AlphaPict_GUI"_uuid)
+                    .Set(color, "034d9f31-3190-423e-a453-c6f3d0a61106#ColorYellow"_uuid)
+                    .Set(source, "3267f558-757f-4c19-a54f-479953979466#ESP.png"_uuid),
+
+                Image
+                    .Set(objectName, "ESPOff.png")
+                    .Set(x, 506)
+                    .Set(y, 246)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "e969986f-8261-4576-8d45-6e88a252a002#ESPOff_AlphaPict_GUI"_uuid)
+                    .Set(color, "034d9f31-3190-423e-a453-c6f3d0a61106#ColorYellow"_uuid)
+                    .Set(source, "2f6fac00-f0de-4f5f-af9c-24eecc77f456#ESPOff.png"_uuid),
+
+                Image
+                    .Set(objectName, "HelperBlindSpot.png")
+                    .Set(x, 445)
+                    .Set(y, 477)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "3df21cb4-50d7-4fd9-9668-5a340affb2e7#HelperBlindSpot.png"_uuid),
+
+                Image
+                    .Set(objectName, "HelperDistanceCritical.png")
+                    .Set(x, 531)
+                    .Set(y, 328)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "da9c5c6f-f8ab-4767-b8e3-9401f114ae9f#HelperDistanceCritical.png"_uuid),
+
+                Image
+                    .Set(objectName, "HelperHindrance.png")
+                    .Set(x, 207)
+                    .Set(y, 411)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "db46ea48-880a-491c-ae4f-94fb1ca16c74#HelperHindrance.png"_uuid),
+
+                Image
+                    .Set(objectName, "HelperLane.png")
+                    .Set(x, 356)
+                    .Set(y, 506)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "483b3c9d-c5c5-4a7f-a8e7-d1806dee86ae#HelperLane.png"_uuid),
+
+                Image
+                    .Set(objectName, "HelperLaneKeeping.png")
+                    .Set(x, 506)
+                    .Set(y, 411)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "d773ec73-6181-4b81-8237-b19aa56f15a6#HelperLaneKeeping.png"_uuid),
+
+                Image
+                    .Set(objectName, "HelperParking.png")
+                    .Set(x, 268)
+                    .Set(y, 477)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "d16aa964-a14a-4144-bdea-a7a86d617bdd#HelperParking.png"_uuid),
+
+                Image
+                    .Set(objectName, "HelperSoundQuietBus.png")
+                    .Set(x, 182)
+                    .Set(y, 328)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "32893bca-5361-4c50-9b0b-11640f43b6a7#HelperSoundQuietBus_AlphaPict_GUI"_uuid)
+                    .Set(color, "cdfbcc49-25f4-4e32-850f-b52731b2ec59#HelperSoundQuietBus_Color_GUI"_uuid)
+                    .Set(source, "f9c29f08-1099-4b1b-a159-fcb31b8afa32#HelperSoundQuietBus.png"_uuid),
+
+                Image
+                    .Set(objectName, "HillStartAid.png")
+                    .Set(x, 207)
+                    .Set(y, 246)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "64d49d5e-0da5-4881-bd8d-a4f6c7dccf8c#HillStartAid_AlphaPict_GUI"_uuid)
+                    .Set(color, "034d9f31-3190-423e-a453-c6f3d0a61106#ColorYellow"_uuid)
+                    .Set(source, "0bcb2f6d-7145-4d87-a94b-50370c24f70c#HillStartAid.png"_uuid),
+
+                Image
+                    .Set(objectName, "InstructorPedal.png")
+                    .Set(x, 356)
+                    .Set(y, 151)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "569c70b0-e8d1-4f5d-b960-60defcc2698a#InstructorPedal.png"_uuid),
+
+                Image
+                    .Set(objectName, "LIM.png")
+                    .Set(x, 356)
+                    .Set(y, 242)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "090bfc50-b76b-41cd-85f2-7ac1f54cdb1f#LIM_AlphaPict_GUI"_uuid)
+                    .Set(color, "034d9f31-3190-423e-a453-c6f3d0a61106#ColorYellow"_uuid)
+                    .Set(source, "fe09dd93-f90e-45ae-ab59-9cc9a229573e#LIM.png"_uuid),
+
+                Image
+                    .Set(objectName, "RecuperationOff.png")
+                    .Set(x, 445)
+                    .Set(y, 180)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "f2f793a3-f690-4f93-9810-b2836b9e39ed#RecuperationOff.png"_uuid),
+
+                Image
+                    .Set(objectName, "Retarder.png")
+                    .Set(x, 445)
+                    .Set(y, 180)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "33a4a372-0a4c-464e-b27c-d996524e5ba4#Retarder_AlphaPict_GUI"_uuid)
+                    .Set(color, "034d9f31-3190-423e-a453-c6f3d0a61106#ColorYellow"_uuid)
+                    .Set(source, "4e3c5e35-441e-4856-9854-0c121ff091ba#Retarder.png"_uuid),
+
+                Image
+                    .Set(objectName, "StopBrake.png")
+                    .Set(x, 207)
+                    .Set(y, 246)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "668e44d8-7138-4bb9-9020-68314f19a2c6#StopBrake.png"_uuid)
+            ),
+
+        CopyFrom(Window, "624bd23a-0304-42a7-bca4-6450fc6f721f"_uuid)
+            .Set(width, 1920)
+            .Set(height, 720)
+            .Children(
+                Image
+                    .Set(objectName, "BatteryHV.png")
+                    .Set(x, 1846)
+                    .Set(y, 46)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "ef61ecba-c3fb-4f1e-b054-1de35d2a4617#BatteryHV_AlphaPict_GUI"_uuid)
+                    .Set(color, "4d075a74-9d3c-46be-834d-e8c4086cbc24#BatteryHV_Color_GUI"_uuid)
+                    .Set(source, "f21fa293-03bf-43f3-9372-dff77af21b34#BatteryHV.png"_uuid),
+
+                Image
+                    .Set(objectName, "BatteryHVError.png")
+                    .Set(x, 1846)
+                    .Set(y, 46)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "2062bf15-e7c9-4f24-ab96-cb812f5b2b9f#BatteryHVError_AlphaPict_GUI"_uuid)
+                    .Set(color, "b5987140-fb67-4ca6-ada6-0a7e71a1d7ff#ColorRed"_uuid)
+                    .Set(source, "bb754ccd-ec06-46f2-b080-8779b5417518#BatteryHVError.png"_uuid),
+
+                Image
+                    .Set(objectName, "BatteryLV.png")
+                    .Set(x, 1846)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, "d6a35eac-7669-4121-a633-70afd727fb27#BatteryLV_AlphaPict_GUI"_uuid)
+                    .Set(color, "c34e3555-bf49-4ae9-8020-c101dc62353e#BatteryLV_Color_GUI"_uuid)
+                    .Set(source, "ccce484a-b5e4-4522-99d3-29162406b468#BatteryLV.png"_uuid),
+
+                Image
+                    .Set(objectName, "BatteryLVCapacityLow.png")
+                    .Set(x, 1853)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "a3ce1770-727e-4d97-9308-586148272d12#BatteryLVCapacityLow.png"_uuid),
+
+                Image
+                    .Set(objectName, "BatteryHVOverheating.png")
+                    .Set(x, 1846)
+                    .Set(y, 602)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "f0831c88-4e8a-445c-9dd3-b22be72a7f5b#BatteryHVOverheating.png"_uuid),
+
+                Image
+                    .Set(objectName, "BatteryLVCurrent.png")
+                    .Set(x, 1853)
+                    .Set(y, 612)
+                    .Set(width, 59)
+                    .Set(height, 59)
+                    .Set(opacity, 0)
+                    .Set(source, "082975b0-37e2-46ea-a1dc-af35a8d429f2#BatteryLVCurrent.png"_uuid)
+            ),
+
+        CopyFrom(Window, "da687763-dee2-410c-8cd0-50164875a9a8"_uuid)
+            .Set(width, 1920)
+            .Set(height, 720)
+            .Children(
+                ArcSegment
+                    .Set(objectName, "AmmeterGlowBack")
+                    .Set(x, 1227)
+                    .Set(y, 51)
+                    .Set(width, 614)
+                    .Set(height, 614)
+                    .Set(angle2, "1513afd9-c267-46d8-ab89-00939ab06e5a#AmmeterBackGlow_Angle_GUI"_uuid)
+                    .Set(color, "4f74933c-95a1-4722-8a84-1bc733d955b4#AmmeterGlow_Color_GUI"_uuid)
+                    .Set(colorSI, 0x32FFFFFF)
+                    .Set(colorSO, 0x32FFFFFF)
+                    .Set(colorEI, 0xC8FFFFFF)
+                    .Set(colorEO, 0xC8FFFFFF)
+                    .Set(radiusInner, 231),
+
+                ArcSegment
+                    .Set(objectName, "AmmeterGlowForward")
+                    .Set(x, 1227)
+                    .Set(y, 51)
+                    .Set(width, 614)
+                    .Set(height, 614)
+                    .Set(angle1, "221cf8d4-50ec-4769-a7ea-a94efc1c0852#AmmeterForwardGlow_Angle_GUI"_uuid)
+                    .Set(angle2, 0)
+                    .Set(color, "4f74933c-95a1-4722-8a84-1bc733d955b4#AmmeterGlow_Color_GUI"_uuid)
+                    .Set(colorSI, 0xC8FFFFFF)
+                    .Set(colorSO, 0xC8FFFFFF)
+                    .Set(colorEI, 0x32FFFFFF)
+                    .Set(colorEO, 0x32FFFFFF)
+                    .Set(radiusInner, 231),
+
+                Image
+                    .Set(objectName, "ArrowMain.png")
+                    .Set(x, 1529)
+                    .Set(y, 590)
+                    .Set(width, 10)
+                    .Set(height, 74)
+                    .Set(transform, Transform
+                        .Set(rotation, Rotation
+                            .Set(angle, "c31f5a35-03ff-47de-9cbd-985b62632149#AmmeterArrow_Angle_GUI"_uuid)
+                            .Set(originX, 5)
+                            .Set(originY, -232)))
+                    .Set(color, "287c5dce-6594-43f9-93a4-480e80a70294#AmmeterArrow_Color_GUI"_uuid)
+                    .Set(source, "0b40b82d-69dd-4b51-8bd5-49bf147a8988#ArrowMain.png"_uuid),
+
+                Image
+                    .Set(objectName, "ChargeRectangle.png")
+                    .Set(x, 1531)
+                    .Set(y, 452)
+                    .Set(width, 5)
+                    .Set(height, 19)
+                    .Set(transform, Transform
+                        .Set(rotation, Rotation
+                            .Set(angle, "0411a7e8-565e-408e-bfed-ccbed5e2fc92#ChargeReserve_Angle_GUI"_uuid)
+                            .Set(originX, 2.5f)
+                            .Set(originY, -94)))
+                    .Set(color, "10070926-56b8-4112-a4c2-fbd8e3cb99ac#ColorGreen"_uuid)
+                    .Set(source, "4f79d5d4-f94c-44d7-a016-d15c1045a415#ChargeRectangle.png"_uuid),
+
+                ArcSegment
+                    .Set(objectName, "ChargeWide")
+                    .Set(x, 1419.5f)
+                    .Set(y, 244)
+                    .Set(width, 227)
+                    .Set(height, 227)
+                    .Set(angle1, 90)
+                    .Set(angle2, "c80f9908-66c0-4fca-814e-e9ac68995399#ChargeReserveGlow_Angle_GUI"_uuid)
+                    .Set(color, "10070926-56b8-4112-a4c2-fbd8e3cb99ac#ColorGreen"_uuid)
+                    .Set(colorSI, 0x0AFFFFFF)
+                    .Set(colorSO, 0x0AFFFFFF)
+                    .Set(radiusInner, 110),
+
+                ArcSegment
+                    .Set(objectName, "ChargeThin")
+                    .Set(x, 1438.5f)
+                    .Set(y, 263)
+                    .Set(width, 190)
+                    .Set(height, 190)
+                    .Set(angle1, 90)
+                    .Set(angle2, "c80f9908-66c0-4fca-814e-e9ac68995399#ChargeReserveGlow_Angle_GUI"_uuid)
+                    .Set(color, "10070926-56b8-4112-a4c2-fbd8e3cb99ac#ColorGreen"_uuid)
+                    .Set(colorSI, 0x0AFFFFFF)
+                    .Set(colorSO, 0x0AFFFFFF)
+                    .Set(radiusInner, 94),
+
+                Text
+                    .Set(objectName, "MileageReserve")
+                    .Set(x, 1466)
+                    .Set(y, 367)
+                    .Set(width, 135)
+                    .Set(height, 65)
+                    .Set(alignment, TextAlign::TopCenter)
+                    .Set(color, "ac324c9a-e123-4aa9-9854-e1c0f6726c07#ColorWhite"_uuid)
+                    .Set(fontFamily, "f2e636d3-025a-408a-9319-39c1f5e97369#Roboto-Medium.ttf"_uuid)
+                    .Set(fontSize, 69)
+                    .Set(text, "93e61419-6a9e-4a80-90da-50ae96d9bfb0#MileageReserve_Text_GUI"_uuid),
+
+                Text
+                    .Set(objectName, "Charge")
+                    .Set(x, 1469)
+                    .Set(y, 302)
+                    .Set(width, 91)
+                    .Set(height, 65)
+                    .Set(alignment, TextAlign::TopRight)
+                    .Set(color, 0xFFB1C6CE)
+                    .Set(fontFamily, "f2e636d3-025a-408a-9319-39c1f5e97369#Roboto-Medium.ttf"_uuid)
+                    .Set(fontSize, 69)
+                    .Set(text, "054649b1-24f2-49fc-b4b9-445e17eff148#ChargeReserve_Filter_GUI"_uuid),
+
+                Text
+                    .Set(objectName, "Charge_%")
+                    .Set(x, 1558)
+                    .Set(y, 302)
+                    .Set(width, 48)
+                    .Set(height, 65)
+                    .Set(alignment, TextAlign::TopRight)
+                    .Set(color, 0xFFB1C6CE)
+                    .Set(fontFamily, "f2e636d3-025a-408a-9319-39c1f5e97369#Roboto-Medium.ttf"_uuid)
+                    .Set(fontSize, 69)
+                    .Set(text, "%")
+            ),
+
+        CopyFrom(Window, "79e64a81-5153-49f8-8ea8-34a1aca413fe"_uuid)
+            .Set(width, 720)
+            .Set(height, 720)
+            .Children(
+                ArcSegment
+                    .Set(x, 79)
+                    .Set(y, 51)
+                    .Set(width, 614)
+                    .Set(height, 614)
+                    .Set(angle1, 90)
+                    .Set(angle2, "1eb3b508-c7d4-4cc1-aec5-01c381c5cb4d#SpeedometerGlowAngle_GUI"_uuid)
+                    .Set(color, "8fa5ef08-04df-4a16-bce1-cf66ffa29bbf#SpeedometerGlowColor_GUI"_uuid)
+                    .Set(colorSI, 0x32FFFFFF)
+                    .Set(colorSO, 0x32FFFFFF)
+                    .Set(colorEI, 0xC8FFFFFF)
+                    .Set(colorEO, 0xC8FFFFFF)
+                    .Set(radiusInner, 231),
+
+                Image
+                    .Set(objectName, "ArrowMain.png")
+                    .Set(x, 381)
+                    .Set(y, 590)
+                    .Set(width, 10)
+                    .Set(height, 74)
+                    .Set(transform, Transform
+                        .Set(rotation, Rotation
+                            .Set(angle, "bf10d302-14e4-4cb9-bcf7-66833b0fa379#SpeedometerArrowAngle_GUI"_uuid)
+                            .Set(originX, 5)
+                            .Set(originY, -232)))
+                    .Set(color, "a85c1b5d-53ae-4d46-9981-ffbbb54891fd#SpeedometerArrowColor_GUI"_uuid)
+                    .Set(source, "0b40b82d-69dd-4b51-8bd5-49bf147a8988#ArrowMain.png"_uuid),
+
+                Text
+                    .Set(objectName, "SpeedometerPrint")
+                    .Set(x, 290)
+                    .Set(y, 300)
+                    .Set(width, 192)
+                    .Set(height, 143)
+                    .Set(alignment, TextAlign::MiddleCenter)
+                    .Set(color, 0xFFFFFFFF)
+                    .Set(fontSize, 122)
+                    .Set(text, "b9ddc23d-a650-43df-9e00-17b6c31b962a#SpeedometerPrint_GUI"_uuid)
+            ),
+
+        CopyFrom(Window, "717e6f2f-f69f-4f49-a151-7fadae84ff7f"_uuid)
+            .Set(width, 1920)
+            .Set(height, 720)
+            .Children(
+                PageView
+                    .Set(objectName, "DoorState_1_1")
+                    .Set(x, 1146)
+                    .Set(y, 355)
+                    .Set(width, 36)
+                    .Set(height, 119)
+                    .Set(selectedIndex, "d15046dd-a503-4226-9247-733c6fdf8201#DoorIndex_1_1_GUI"_uuid)
+                    .Children(
+                        Image
+                            .Set(objectName, "doors_1_1_00.png")
+                            .Set(width, 36)
+                            .Set(height, 119)
+                            .Set(source, "9d16bf6b-45a8-4228-9469-c5c70b5e6f91#doors_1_1_00.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_1_1_01.png")
+                            .Set(width, 36)
+                            .Set(height, 119)
+                            .Set(source, "e63eb9c2-6303-4652-9a56-c2ccde4a82e0#doors_1_1_01.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_1_1_02.png")
+                            .Set(width, 36)
+                            .Set(height, 119)
+                            .Set(source, "f6b20114-54ad-4898-97fd-65432719e7c8#doors_1_1_02.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_1_1_03.png")
+                            .Set(width, 36)
+                            .Set(height, 119)
+                            .Set(source, "20e2165e-58ce-4859-ba9a-5ebfca9d238a#doors_1_1_03.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_1_1_04.png")
+                            .Set(width, 36)
+                            .Set(height, 119)
+                            .Set(source, "f52228f1-b1e2-4c27-af4b-fd8a9ef0caf8#doors_1_1_04.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_1_1_05.png")
+                            .Set(width, 36)
+                            .Set(height, 119)
+                            .Set(source, "2a80e975-9e49-4dc0-a48e-c3af53cc41c7#doors_1_1_05.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_1_1_06.png")
+                            .Set(width, 36)
+                            .Set(height, 119)
+                            .Set(source, "3ea48bc3-0728-427a-af8e-1207ee7ab622#doors_1_1_06.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_1_1_07.png")
+                            .Set(width, 36)
+                            .Set(height, 119)
+                            .Set(source, "43feab37-bb63-414b-b142-f0fabd5c3bc1#doors_1_1_07.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_1_1_08.png")
+                            .Set(width, 36)
+                            .Set(height, 119)
+                            .Set(source, "ddf84cb1-221e-4da0-87e6-d0021d5c7896#doors_1_1_08.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_1_1_09.png")
+                            .Set(width, 36)
+                            .Set(height, 119)
+                            .Set(source, "62a08632-0d5e-4800-a762-a1e9f2d8d4a7#doors_1_1_09.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_1_1_10.png")
+                            .Set(width, 36)
+                            .Set(height, 119)
+                            .Set(fillMode, ImageFillMode::PreserveAspectCrop)
+                            .Set(source, "66479185-d2c0-4936-ba61-0be529c094f4#doors_1_1_10.png"_uuid),
+
+                        Image
+                            .Set(objectName, "DoorOpen_1_1.png")
+                            .Set(width, 36)
+                            .Set(height, 119)
+                            .Set(source, "a5974224-23d7-48d7-853a-da12be0cc587#DoorOpen_1_1.png"_uuid),
+
+                        Image
+                            .Set(objectName, "DoorError_1_1.png")
+                            .Set(width, 36)
+                            .Set(height, 119)
+                            .Set(source, "4ae760ed-96f5-4647-b6e9-f25a97fac76c#DoorError_1_1.png"_uuid),
+
+                        Image
+                            .Set(objectName, "DoorJam_1_1.png")
+                            .Set(width, 36)
+                            .Set(height, 119)
+                            .Set(source, "68d63e59-60c6-4477-b8ed-6e0e7cdfa61f#DoorJam_1_1.png"_uuid),
+
+                        Image
+                            .Set(objectName, "DoorUnauthorized_1_1.png")
+                            .Set(width, 36)
+                            .Set(height, 119)
+                            .Set(source, "55ed4427-37f1-45a4-8bce-b615bc66757d#DoorUnauthorized_1_1.png"_uuid),
+
+                        Image
+                            .Set(objectName, "DoorRequest_1_1.png")
+                            .Set(width, 36)
+                            .Set(height, 119)
+                            .Set(source, "2b50d327-3065-46fd-8f7a-3151f8ce27de#DoorRequest_1_1.png"_uuid)
+                    ),
+
+                PageView
+                    .Set(objectName, "DoorState_1_2")
+                    .Set(x, 1109)
+                    .Set(y, 355)
+                    .Set(width, 34)
+                    .Set(height, 118)
+                    .Set(selectedIndex, "670c5268-fb36-4a05-91d2-7d77cda53a1a#DoorIndex_1_2_GUI"_uuid)
+                    .Children(
+                        Image
+                            .Set(objectName, "doors_1_2_00.png")
+                            .Set(width, 34)
+                            .Set(height, 118)
+                            .Set(source, "2f56487c-fbec-453e-bf8c-45daf21ad314#doors_1_2_00.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_1_2_01.png")
+                            .Set(width, 34)
+                            .Set(height, 118)
+                            .Set(source, "08e43b6f-25cf-4668-bec0-fdb9f89d2f68#doors_1_2_01.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_1_2_02.png")
+                            .Set(width, 34)
+                            .Set(height, 118)
+                            .Set(source, "83b18509-826a-43ef-b2e4-8a63f496848f#doors_1_2_02.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_1_2_03.png")
+                            .Set(width, 34)
+                            .Set(height, 118)
+                            .Set(source, "b05642cc-d19a-4478-ab54-b9808b9bd174#doors_1_2_03.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_1_2_04.png")
+                            .Set(width, 34)
+                            .Set(height, 118)
+                            .Set(source, "5a21330c-7237-4f59-a848-6449da17b45c#doors_1_2_04.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_1_2_05.png")
+                            .Set(width, 34)
+                            .Set(height, 118)
+                            .Set(source, "9863d430-9ce0-4868-ae4d-f1c6cbe97802#doors_1_2_05.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_1_2_06.png")
+                            .Set(width, 34)
+                            .Set(height, 118)
+                            .Set(source, "be225fc5-554c-4a0a-b8b6-57b22064c684#doors_1_2_06.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_1_2_07.png")
+                            .Set(width, 34)
+                            .Set(height, 118)
+                            .Set(source, "6d188733-5fad-4680-bbf9-0a8243ba892d#doors_1_2_07.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_1_2_08.png")
+                            .Set(width, 34)
+                            .Set(height, 118)
+                            .Set(source, "be013125-55bf-4c4a-a30e-93700d8596d2#doors_1_2_08.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_1_2_09.png")
+                            .Set(width, 34)
+                            .Set(height, 118)
+                            .Set(source, "77b8a873-561f-4773-9492-721191b1ad34#doors_1_2_09.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_1_2_10.png")
+                            .Set(width, 34)
+                            .Set(height, 118)
+                            .Set(source, "f1655fc8-77b4-456f-a7a5-139640727e85#doors_1_2_10.png"_uuid),
+
+                        Image
+                            .Set(objectName, "DoorOpen_1_2.png")
+                            .Set(width, 34)
+                            .Set(height, 118)
+                            .Set(source, "cee74ce7-17c6-4712-8a83-44f69c4678bd#DoorOpen_1_2.png"_uuid),
+
+                        Image
+                            .Set(objectName, "DoorError_1_2.png")
+                            .Set(width, 34)
+                            .Set(height, 118)
+                            .Set(source, "bbfb0e64-1e0f-43f6-a1d9-3b70563c7968#DoorError_1_2.png"_uuid),
+
+                        Image
+                            .Set(objectName, "DoorJam_1_2.png")
+                            .Set(width, 34)
+                            .Set(height, 118)
+                            .Set(source, "cfe133e7-b85b-4b08-b889-3f5a32d47895#DoorJam_1_2.png"_uuid),
+
+                        Image
+                            .Set(objectName, "DoorUnauthorized_1_2.png")
+                            .Set(width, 34)
+                            .Set(height, 118)
+                            .Set(source, "330d1222-c8a4-40f8-87f0-3638e82c76f6#DoorUnauthorized_1_2.png"_uuid),
+
+                        Image
+                            .Set(objectName, "DoorRequest_1_2.png")
+                            .Set(width, 34)
+                            .Set(height, 118)
+                            .Set(source, "8266a15a-89ba-4f8f-965a-59b7c92cdb62#DoorRequest_1_2.png"_uuid)
+                    ),
+
+                PageView
+                    .Set(objectName, "DoorState_2")
+                    .Set(x, 864)
+                    .Set(y, 355)
+                    .Set(width, 59)
+                    .Set(height, 109)
+                    .Set(selectedIndex, "27acde67-540c-4fb9-badd-f6b6e792b430#DoorIndex_2_GUI"_uuid)
+                    .Children(
+                        Image
+                            .Set(objectName, "doors_2_00.png")
+                            .Set(width, 59)
+                            .Set(height, 109)
+                            .Set(source, "5d22282f-a419-472d-bc34-c5d6e8941e46#doors_2_00.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_2_01.png")
+                            .Set(width, 59)
+                            .Set(height, 109)
+                            .Set(source, "91a9a1a6-ce01-421f-9cf8-a316a311dffc#doors_2_01.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_2_02.png")
+                            .Set(width, 59)
+                            .Set(height, 109)
+                            .Set(source, "4db5cb6b-80af-4d34-8706-3f0e22db87dd#doors_2_02.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_2_03.png")
+                            .Set(width, 59)
+                            .Set(height, 109)
+                            .Set(source, "1b5a6ca2-021e-43b9-82fc-c2a8da9750c8#doors_2_03.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_2_04.png")
+                            .Set(width, 59)
+                            .Set(height, 109)
+                            .Set(source, "c9e69007-f169-459b-81d2-32e2ef16c81c#doors_2_04.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_2_05.png")
+                            .Set(width, 59)
+                            .Set(height, 109)
+                            .Set(source, "a73f56af-5d1b-40d3-91e2-299e43326951#doors_2_05.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_2_06.png")
+                            .Set(width, 59)
+                            .Set(height, 109)
+                            .Set(source, "d7fe1ba9-ac05-4ebb-b56b-7060de7ba893#doors_2_06.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_2_07.png")
+                            .Set(width, 59)
+                            .Set(height, 109)
+                            .Set(source, "942675a1-a3bb-4d5d-aaa4-4c0e644b1869#doors_2_07.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_2_08.png")
+                            .Set(width, 59)
+                            .Set(height, 109)
+                            .Set(source, "d8facf4c-5a05-4ae8-9536-4ad1b488333b#doors_2_08.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_2_09.png")
+                            .Set(width, 59)
+                            .Set(height, 109)
+                            .Set(source, "f9102f09-ccd0-4280-a5fb-b3c70f38b7c9#doors_2_09.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_2_10.png")
+                            .Set(width, 59)
+                            .Set(height, 109)
+                            .Set(source, "109b5ab4-77fc-490c-a520-4c96518b083b#doors_2_10.png"_uuid),
+
+                        Image
+                            .Set(objectName, "DoorOpen_2.png")
+                            .Set(width, 59)
+                            .Set(height, 109)
+                            .Set(source, "b62418ab-0785-4553-978a-0da056463207#DoorOpen_2.png"_uuid),
+
+                        Image
+                            .Set(objectName, "DoorError_2.png")
+                            .Set(width, 59)
+                            .Set(height, 109)
+                            .Set(source, "d260b8cc-b8a6-4a3e-b9cc-d4ba98ea9985#DoorError_2.png"_uuid),
+
+                        Image
+                            .Set(objectName, "DoorJam_2.png")
+                            .Set(width, 59)
+                            .Set(height, 109)
+                            .Set(source, "57123959-6b2d-462d-896e-07e8404d11e7#DoorJam_2.png"_uuid),
+
+                        Image
+                            .Set(objectName, "DoorUnauthorized_2.png")
+                            .Set(width, 59)
+                            .Set(height, 109)
+                            .Set(source, "84c086bd-2103-41f3-973e-f2786dda8b14#DoorUnauthorized_2.png"_uuid),
+
+                        Image
+                            .Set(objectName, "DoorRequest_2.png")
+                            .Set(width, 59)
+                            .Set(height, 109)
+                            .Set(source, "b09738f0-4f31-46c7-9197-b0901fbce6bc#DoorRequest_2.png"_uuid)
+                    ),
+
+                PageView
+                    .Set(objectName, "DoorState_3")
+                    .Set(x, 703)
+                    .Set(y, 355)
+                    .Set(width, 52)
+                    .Set(height, 102)
+                    .Set(selectedIndex, "4a467249-e6a5-43be-b390-efc4c3aea401#DoorIndex_3_GUI"_uuid)
+                    .Children(
+                        Image
+                            .Set(objectName, "doors_3_00.png")
+                            .Set(width, 52)
+                            .Set(height, 102)
+                            .Set(source, "675cf731-505d-4331-bbcb-d397728d27b6#doors_3_00.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_3_01.png")
+                            .Set(width, 52)
+                            .Set(height, 102)
+                            .Set(source, "7a76ae88-4ef3-4825-a3a7-2fb397dfe8bb#doors_3_01.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_3_02.png")
+                            .Set(width, 52)
+                            .Set(height, 102)
+                            .Set(source, "f42f3cb4-67ae-4728-b7d1-417809fff5fb#doors_3_02.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_3_03.png")
+                            .Set(width, 52)
+                            .Set(height, 102)
+                            .Set(source, "c3cb98a3-7b39-4913-937b-766bc7581218#doors_3_03.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_3_04.png")
+                            .Set(width, 52)
+                            .Set(height, 102)
+                            .Set(source, "939c4305-3694-4d9b-929c-844837d49c80#doors_3_04.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_3_05.png")
+                            .Set(width, 52)
+                            .Set(height, 102)
+                            .Set(source, "7bc17426-b85e-4130-91db-bc1d665e4ec3#doors_3_05.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_3_06.png")
+                            .Set(width, 52)
+                            .Set(height, 102)
+                            .Set(source, "664b8132-c4cc-4f9d-b455-05b116e5f24c#doors_3_06.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_3_07.png")
+                            .Set(width, 52)
+                            .Set(height, 102)
+                            .Set(source, "09aeb2d5-2c77-4a5a-95ac-349d60d406f4#doors_3_07.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_3_08.png")
+                            .Set(width, 52)
+                            .Set(height, 102)
+                            .Set(source, "bd4189ee-cf6d-4bef-a868-c82ffc7f1a7c#doors_3_08.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_3_09.png")
+                            .Set(width, 52)
+                            .Set(height, 102)
+                            .Set(source, "0b05af45-c02d-40ef-9eaa-17043ae64840#doors_3_09.png"_uuid),
+
+                        Image
+                            .Set(objectName, "doors_3_10.png")
+                            .Set(width, 52)
+                            .Set(height, 102)
+                            .Set(source, "4d7ceb73-28c2-4bda-bf7e-738f8e2dd2bc#doors_3_10.png"_uuid),
+
+                        Image
+                            .Set(objectName, "DoorOpen_3.png")
+                            .Set(width, 52)
+                            .Set(height, 102)
+                            .Set(source, "f56104ab-0866-4561-a64e-b6b929aaa05c#DoorOpen_3.png"_uuid),
+
+                        Image
+                            .Set(objectName, "DoorError_3.png")
+                            .Set(width, 52)
+                            .Set(height, 102)
+                            .Set(source, "4d722037-8693-4427-be05-f5bd14160efe#DoorError_3.png"_uuid),
+
+                        Image
+                            .Set(objectName, "DoorJam_3.png")
+                            .Set(width, 52)
+                            .Set(height, 102)
+                            .Set(source, "546a6cc0-2fbc-4059-8100-d300c2793e97#DoorJam_3.png"_uuid),
+
+                        Image
+                            .Set(objectName, "DoorUnauthorized_3.png")
+                            .Set(width, 52)
+                            .Set(height, 102)
+                            .Set(source, "dea301d0-4e09-4c74-812a-fff28325b874#DoorUnauthorized_3.png"_uuid),
+
+                        Image
+                            .Set(objectName, "DoorRequest_3.png")
+                            .Set(width, 52)
+                            .Set(height, 102)
+                            .Set(source, "592e25bc-2e77-4e88-9d6d-185ba73829bb#DoorRequest_3.png"_uuid)
+                    ),
+
+                Image
+                    .Set(objectName, "DoorRamp_2.png")
+                    .Set(x, 826)
+                    .Set(y, 461)
+                    .Set(width, 98)
+                    .Set(height, 25)
+                    .Set(opacity, "40f068e3-9770-4f38-8904-1d3ce191df47#DoorRamp_2_GUI"_uuid)
+                    .Set(source, "8962b115-5ef6-4b2d-aa5d-d6e4995e7e69#DoorRamp_2.png"_uuid)
+            )
+    )
