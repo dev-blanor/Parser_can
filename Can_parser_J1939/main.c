@@ -183,39 +183,68 @@ typedef struct can_message_tx
 
 can_message_tx write_can_tx = { 0,{0,0,0,0,0,0,0,0},0 };
 
-void Read_multi(can_multi_t* can_mes_multi, uint8_t buff[], uint8_t count)
+uint8_t total_buff[1000];
+uint8_t test;
+
+void Read_multi_to_array(uint8_t buff[], uint8_t count)
 {
-	
 	if (count == 0)
 	{
-		multi_1.nbr_byte = (buff[1] << 8) | (buff[2]);
+		multi_1.nbr_byte = (buff[2] << 8) | (buff[1]);
 		multi_1.nbr_packets = buff[3];
-		multi_1.dm = (buff[5] << 16) | (buff[6] << 8) | (buff[7]);
-		printf("%X \n", multi_1.nbr_byte);
-		
+		multi_1.dm = (buff[6] << 16) | (buff[5] << 8) | (buff[7]);
 	}
+	else
+	{
+		for (int i = 0; i < 7; i++)
+		{
+
+			test = i + 7 * ((int)buff[0] - 1);
+			total_buff[i + 7 * ((int)buff[0] - 1)] = buff[i + 1];
+		}
+	}
+	/*
 	else if (count == 1)
 	{
-		multi_1.array_lamp_status->ProtectLampStatus = buff[0] & 0x3;
-		multi_1.array_lamp_status->AmberWarningLampStatus = (buff[0]>>2) & 0x3;
-		multi_1.array_lamp_status->couRedStopLampStatent = (buff[0]>>4) & 0x3;
-		multi_1.array_lamp_status->MalfunctionIndicatorLampStatus = (buff[0]>>6) & 0x3;
-		multi_1.array_lamp_status->FlashProtectLamp = buff[1] & 0x3;
-		multi_1.array_lamp_status->FlashAmberWarningLamp = (buff[1]>>2) & 0x3;
-		multi_1.array_lamp_status->FlashRedStopLamp = (buff[1]>>4) & 0x3;
-		multi_1.array_lamp_status->FlashMalfuncIndicatorLamp = (buff[1]>>6) & 0x3;
+
 
 		multi_1.array_param_multi[0].spn = (buff[3]<<11) | (buff[4]<<3) | (buff[5]>>5);
 		multi_1.array_param_multi[0].fmi = buff[5] & 0x1F;
 		multi_1.array_param_multi[0].count = buff[6];
-	}	
+	//	printf("%X \n", multi_1.array_param_multi[0].spn);
+	}
 	else
 	{
-		multi_1.array_param_multi[]
+		multi_1.array_param_multi[count - 1].spn = buff[count];
 	}
+	*/
+
 
 }
 
+void Parse_array_multi()
+{
+	multi_1.array_lamp_status->ProtectLampStatus = total_buff[0] & 0x3;
+	multi_1.array_lamp_status->AmberWarningLampStatus = (total_buff[0] >> 2) & 0x3;
+	multi_1.array_lamp_status->couRedStopLampStatent = (total_buff[0] >> 4) & 0x3;
+	multi_1.array_lamp_status->MalfunctionIndicatorLampStatus = (total_buff[0] >> 6) & 0x3;
+	multi_1.array_lamp_status->FlashProtectLamp = total_buff[1] & 0x3;
+	multi_1.array_lamp_status->FlashAmberWarningLamp = (total_buff[1] >> 2) & 0x3;
+	multi_1.array_lamp_status->FlashRedStopLamp = (total_buff[1] >> 4) & 0x3;
+	multi_1.array_lamp_status->FlashMalfuncIndicatorLamp = (total_buff[1] >> 6) & 0x3;
+
+	for (int i = 0; i < ((int) (multi_1.nbr_byte - 2) )/4 ; i++)
+	{
+		multi_1.array_param_multi[i].spn = (total_buff[2+i*4] << 11) | (total_buff[3+i*4] << 3) | (total_buff[4+i*4] >> 5);
+		multi_1.array_param_multi[i].fmi = total_buff[4+i*4] & 0x1F;
+		multi_1.array_param_multi[i].count = total_buff[5+i*4];
+		printf("%X ", multi_1.array_param_multi[i].spn);
+		printf("%X ", multi_1.array_param_multi[i].fmi);
+		printf("%X ", multi_1.array_param_multi[i].count);
+	}
+	printf("\n");
+
+}
 void J1939_Parser(can_message_t* can_rx, uint8_t can_rx_buf[])
 {
 	uint64_t value_res = 0; // результат значения из буфера
@@ -441,24 +470,31 @@ void J1939_Write(array_message_t *array_mes_can, uint64_t id_can)
 	printf("%X %X \n", (int)invert_value_Msb, (int)invert_value_Lsb);
 }
 
+
 void main()
 {	
 	
 	uint8_t buff_rx[8] = { 0x39,0x30,0x11,0x22,0x33,0x44,0x55,0x66 };
 
-	uint8_t buff_multi[3][8] = {{0x00,0x0A,0x00,0x02,0xFF,0xCA,0xFE,0x00},
-								{0x03,0x11,0xFF,0x61,0x00,0x03,0x01,0x7f},
+	uint8_t buff_multi[][8] = { {0x20,0x0A,0x00,0x02,0xFF,0xCA,0xFE,0x00},
+								{0x01,0x11,0xFF,0x61,0x00,0x03,0x01,0x7f},
 								{0x02,0x02,0x09,0x02,0xFF,0xFF,0xFF,0xFF}};
 
 
-
-	for (int i=0; i < 3; i++)
+	
+	
+	for (int i=0; i < (int) buff_multi[0][3]+1; i++)
 	{
-		Read_multi(&multi_1, buff_multi[i],i);
+		Read_multi_to_array(buff_multi[i],i);
 
 	}
-	
-	
+
+	for (int i = 0; i < 60; i++)
+	{
+		printf("%X ", total_buff[i]);
+	}
+
+	Parse_array_multi();
 	uint8_t buff_tx[8]; 
 /*	J1939_Parser(&AIR1_id30, buff_rx); // Чтение буфера и запись в указанную структуру 
 	printf("%X :: %d\n", (int)AirPres1_x30_data, (int)AirPres1_x30_data);
